@@ -13,8 +13,8 @@ spring:
             - Path=/people-module/**
           filters:
             - RewritePath=/people-module, /
-security:
-  oauth2:
-    resourceserver:
-      jwt:
-        issuer-uri: http://localhost:40005/auth/realms/demorealm
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:40005/auth/realms/demorealm
